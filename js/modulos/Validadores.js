@@ -1,30 +1,32 @@
+export {validadorFormularioRegistro,validorFormularioBusqueda};
+
 function validarDeBoletas(str){
     let pattern=/^(PM|PE)[0-9]{8}$/;
-    return isNaN(str)==0 && pattern.test(str);
+    return str.length>0 && pattern.test(str);
 }
 function validarCurp(str){
     let pattern=/^[A-Z]{4}[0-9]{6}[A-Z]{6}[A-Z|0-9]{2}$/;
-    return isNaN(str)==0 && pattern.test(str);
+    return str.length>0 && pattern.test(str);
 }
 function validarNumero(str){
     let pattern=/^[0-9]{2}[0-9]{8}$/;
-    return isNaN(str)==0 && pattern.test(str);
+    return str.length>0 && pattern.test(str);
 }
 function validarNombre(nombre){
-    return isNaN(nombre)==0;
+    return nombre.length>0;
 }
 function validarApellido(apellido){
-    return isNaN(apellido)==0;
+    return apellido.length>0;
 }
 function validarCorreo(correo){
     let pattern=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-    return isNaN(correo)==0 && pattern.test(correo);
+    return correo.length>0 && pattern.test(correo);
 }
 function validarEscuela(escuela){
-    return isNaN(escuela)==0;
+    return escuela.length>0;
 }
 function validarPromedio(promedio){
-    return isNaN(promedio)==0;
+    return promedio.length>0 && isNaN(promedio)==0;
 }
 function validadorFormularioRegistro(formulario){
     let res="";
@@ -34,9 +36,9 @@ function validadorFormularioRegistro(formulario){
     if(validarCurp(formulario['curp'].value)==0)res=res+"Curp ";
     if(validarCorreo(formulario['correo'].value)==0)res=res+"Correo ";
     if(validarNumero(formulario['numero'].value)==0)res=res+"Numero ";
-    if(validarEscuela(formulario['escuela'].value)==0)res=res+"Escuela ";
+    if(validarEscuela(formulario['escuela'].value)==0 || (formulario['otraEscuela'].checked && validarEscuela(formulario['escuela2'].value)==0))res=res+"Escuela ";
     if(validarPromedio(formulario['promedio'].value)==0)res=res+"Promedio ";
-    if(res.length>0) res+="Incorrecto";
+    if(res.length>0) res=res+"Incorrecto";
     return res;
 }
 function validorFormularioBusqueda(formulario){
@@ -44,4 +46,4 @@ function validorFormularioBusqueda(formulario){
     if(validarCurp(formulario['curp'].value))res="Curp Invalido";
     return res;
 }
-export {validadorFormularioRegistro,validorFormularioBusqueda};
+

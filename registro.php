@@ -63,17 +63,53 @@
                                 <div class="block-form">
                                     <h3><i class="fa-solid fa-globe"></i> Procedencia</h3>
                                     <div class="form-floating">
-                                        <select name="estado" id="estado" class="form-control obd">
+                                        <select name="estado" id="estado" class="form-select obd">
                                             <option value="Mexico">Mexico</option>
                                         </select>
                                         <label for="nombre">Estado</label>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="text" name="escuela" placeholder="Escuela" type="text" id="escuela"  list="escuelas" class="form-control" required>
-                                        <datalist id="escuelas">
-                                            <option value="Cecyt-8">Cecyt 8</option>
-                                        </datalist>
-                                        <label for="nombre"><i class="fa-solid fa-school"></i> Escuela</label>
+                                        <select name="escuela" id="escuela" class="form-select obd">
+                                            <option value="Cecyt-8">Cecyt-8</option>
+                                        </select>
+                                        <label for="escuela"><i class="fa-solid fa-school"></i> Escuela</label>
+                                        <div class="invalid-feedback" data-sb-feedback="escuela">La escuela es invalida.</div>
+                                    </div>
+                                    <div class="">
+                                        <label for="Otra">Otra</label>
+                                        <input type="checkbox"class="obd form-check" id="otraEscuela">
+                                        <div class="invalid-feedback" data-sb-feedback="escuela">La escuela es invalida.</div>
+                                    </div>
+                                    <div class="form-floating"id="OtraEscuela">
+                                        <input type="text" name="escuela2" id="" class="obd form-control" value="">
+                                        <label for="escuelas2"><i class="fa-solid fa-school"></i> Otra Escuela</label>
+                                        <div class="invalid-feedback" data-sb-feedback="escuela">La escuela es invalida.</div>
+                                    </div>
+                                </div>
+                                <div class="block-form">
+                                    <h3>Dificultades</h3>
+                                    <div class="">
+                                        <label for="otraDiscapacidadCheck">Discapacidad Motriz</label>
+                                        <input name="discapacidadMotriz" placeholder="Discapacidad" type="checkbox"  class="form-check obd" require>
+                                        <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
+                                    </div>
+                                    <div class="">
+                                        <label for="otraDiscapacidadCheck">Discapacidad Auditiva</label>
+                                        <input name="discapacidadAuditiva" placeholder="Discapacidad" type="checkbox"  class="form-check obd" require>
+                                        <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
+                                    </div>
+                                    <div class="">
+                                        <label for="otraDiscapacidadCheck">Discapacidad Visual</label>
+                                        <input name="discapacidadVisual" placeholder="Discapacidad" type="checkbox"  class="form-check obd" require>
+                                        <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
+                                    </div>
+                                    <div class="">
+                                        <label for="otraDiscapacidadCheck">Otra Discapacidad</label>
+                                        <input name="otraDiscapacidadC" placeholder="Discapacidad" type="checkbox" id="otraDiscapacidadCheck" class="form-check obd" require>
+                                    </div>
+                                    <div class="form-floating" id="otraDiscapacidadCampo" style="display: none;">
+                                        <input type="text" name="otraDiscapacidad" id="" class="obd form-control" value="">
+                                        <label for="escuelas2"><i class="fa-solid fa-school"></i> Otra Escuela</label>
                                         <div class="invalid-feedback" data-sb-feedback="escuela">La escuela es invalida.</div>
                                     </div>
                                 </div>
@@ -84,9 +120,6 @@
                                         <label for="nombre"><i class="fa-solid fa-graduation-cap"></i> Promedio</label>
                                         <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
                                     </div>
-                                </div>
-                                <div class="block-form">
-                                    <h3>Dificultades</h3>
                                 </div>
                                 <button  type="submit" btn btn-primary text-uppercase" id="enviarFormulario"><i class="fa-solid fa-paper-plane"></i> Send</button>
                             </form>
