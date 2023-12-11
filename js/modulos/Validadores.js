@@ -29,14 +29,14 @@ function validarPromedio(promedio){
 function validadorFormularioRegistro(formulario){
     let res="";
     if(validarNombre(formulario['nombre'].value)==0)res=res+"Nombre ";
-    if(validarNombre(formulario['apellido'].value)==0)res=res+"Apellido ";
+    if(validarApellido(formulario['apellido'].value)==0)res=res+"Apellido ";
     if(validarDeBoletas(formulario['boleta'].value)==0)res=res+"Boleta ";
     if(validarCurp(formulario['curp'].value)==0)res=res+"Curp ";
     if(validarCorreo(formulario['correo'].value)==0)res=res+"Correo ";
     if(validarNumero(formulario['numero'].value)==0)res=res+"Numero ";
     if(validarEscuela(formulario['escuela'].value)==0)res=res+"Escuela ";
     if(validarPromedio(formulario['promedio'].value)==0)res=res+"Promedio ";
-    if(res.length>0) res+=" Esta incorrecto";
+    if(res.length>0) res+="Incorrecto";
     return res;
 }
 function validorFormularioBusqueda(formulario){
