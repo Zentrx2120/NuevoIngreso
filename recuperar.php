@@ -20,9 +20,12 @@
         </header>
         <div class="container">
             <form action="" class="contactForm">
-                <div class="form-floating">
-                    <input type="text" placeholder="Buscar" class="form-control">
-                    <label for=""><i class="fa-solid fa-magnifying-glass"></i> Buscar por CURP</label>
+                <div class="d-flex flex-row">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Buscar" class="form-control">
+                        <label for=""><i class="fa-solid fa-magnifying-glass"></i> Buscar por CURP</label>
+                    </div>
+                    <button id="submitSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
         </div>

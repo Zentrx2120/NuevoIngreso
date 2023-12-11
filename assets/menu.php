@@ -4,8 +4,7 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Logo_IPN.png/64px-Logo_IPN.png" alt="Logo_IPN" class="navbar-brand">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
+                    Menu <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">

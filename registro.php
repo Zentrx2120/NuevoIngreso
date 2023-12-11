@@ -23,7 +23,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="my-5">
-                            <form id="contactForm">
+                            <form id="Formulario-Registro">
                                 <div class="block-form">
                                     <h3><i class="fa-solid fa-id-card"></i> Indentidad</h3>
                                 <div class="form-floating">
@@ -55,7 +55,7 @@
                                         <div class="invalid-feedback" data-sb-feedback="curp">El correo es invalido.</div>
                                     </div>
                                     <div class="form-floating">
-                                        <input type="text" placeholder="Telefono" type="tel" id="telefono" class="form-control" require>
+                                        <input  placeholder="Telefono" type="tel" id="telefono" class="form-control" require>
                                         <label for="nombre"><i class="fa-solid fa-phone"></i> Telefono</label>
                                         <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
                                     </div>
@@ -88,7 +88,7 @@
                                 <div class="block-form">
                                     <h3>Dificultades</h3>
                                 </div>
-                                <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Send</button>
+                                <button class="btn btn-primary text-uppercase" id="enviarFormulario"><i class="fa-solid fa-paper-plane"></i> Send</button>
                             </form>
                         </div>
                     </div>

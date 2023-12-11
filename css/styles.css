@@ -10791,6 +10791,11 @@ header.masthead .post-heading .meta a {
 .post-preview > .post-meta > a {
   text-decoration: none;
 }
+.contentFlex{
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
 @media (min-width: 992px) {
   .post-preview > a > .post-title {
     font-size: 2.25rem;
