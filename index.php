@@ -10,9 +10,9 @@
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Examen para Alumnos de Nuevo Ingreso</h1>
-                            <span class="subheading">Ciclo Escolar 2024-2025</span>
+                        <div class="site-heading text-uppercase">
+                            <h1>Examen Para Alumnos De Nuevo Ingreso</h1>
+                            <span class="subheading">Ciclo Escolar 2024-2</span>
                         </div>
                     </div>
                 </div>
