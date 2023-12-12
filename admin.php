@@ -6,18 +6,52 @@
     </head>
     <body>
         <?php include './assets/menu.php'; ?>
-        <header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-                            <h1>Examen para Alumnos de Nuevo Ingreso</h1>
-                            <span class="subheading">Ciclo Escolar 2024-2025</span>
-                        </div>
+        <header class="masthead" style="background-color: black; color:white">
+              <div class="container justify-content-center">
+                    <div class="site-heading">
+                            <h1>Admin</h1>
                     </div>
-                </div>
-            </div>
+              </div>
         </header>
+        <div class="container">
+            <form action="" class="contactForm">
+                <div class="d-flex flex-row">
+                    <div class="form-floating">
+                        <input type="text" placeholder="Buscar" class="form-control">
+                        <label for=""><i class="fa-solid fa-magnifying-glass"></i> Buscar por CURP</label>
+                    </div>
+                    <button id="submitSearch"><i class="btn btn-success fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </div>
+        <main>
+            <table class="table ">
+                <thead class="text-uppercase">
+                    <th>nombre</th>
+                    <th>Apellido</th>
+                    <th>Preboleta</th>
+                    <th>Curp</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Estado</th>
+                    <th>Escuela</th>
+                    <th>Promedio</th>
+                    <th>Horario</th>
+                </thead>
+                <tbody>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                    <td><input type="text" > <button class="btn btn-danger">Modificar</button></td>
+                </tbody>
+            </table>
+        </main>
         <?php include './assets/footer.php'; ?>
     </body>
 </html>
