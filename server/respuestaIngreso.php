@@ -1,3 +1,4 @@
 <?php
-    echo("si")
+    $nombre=$_POST['nombre'];
+    echo "Tus datos han sido enviados $nombre";
 ?>

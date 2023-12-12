@@ -24,6 +24,7 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="my-5">
                             <form id="Formulario-Registro">
+                                <div id="form-data">
                                 <div class="block-form">
                                     <h3><i class="fa-solid fa-id-card"></i> Indentidad</h3>
                                 <div class="form-floating">
@@ -121,7 +122,13 @@
                                         <div class="invalid-feedback" data-sb-feedback="curp">El telefono es invalido.</div>
                                     </div>
                                 </div>
-                                <button  type="submit" btn btn-primary text-uppercase" id="enviarFormulario"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                                <button  class="btn btn-danger text-uppercase" id="enviarFormulario"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                                </div>
+                                <div id="form-enviar" style="display: none;">
+                                        <h3>Deseas Continuar o Editar</h3>
+                                        <button id="regresarFormulario" class="btn btn-primary text-uppercase"><i class="fa-solid fa-rotate-left"></i> Editar</button>
+                                        <button  type="submit" class="btn btn-success text-uppercase"><i class="fa-solid fa-paper-plane"></i> Send</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -129,5 +136,6 @@
             </div>
         </main>
         <?php include './assets/footer.php'; ?>
+        <script src="js/Formulario.js" type="module"></script>
     </body>
 </html>

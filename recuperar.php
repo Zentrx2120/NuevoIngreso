@@ -25,12 +25,29 @@
                         <input type="text" placeholder="Buscar" class="form-control">
                         <label for=""><i class="fa-solid fa-magnifying-glass"></i> Buscar por CURP</label>
                     </div>
-                    <button id="submitSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button id="submitSearch"><i class="btn btn-secondary fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
         </div>
         <main class="container">
-
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Boleta</th>
+                        <th>CURP</th>
+                        <th>Horario</th>
+                        <th>Descargar Datos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <td>Blablabla</td>
+                       <td>Blablabla</td>
+                       <td>10:30-12:00</td>
+                       <td><button class="btn btn-success"><i class="fa-solid fa-download"></i> Descargar</button></td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <?php include './assets/footer.php'; ?>
     </body>
