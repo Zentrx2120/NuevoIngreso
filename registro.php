@@ -71,7 +71,23 @@
                                     </div>
                                     <div class="form-floating">
                                         <select name="escuela" id="escuela" class="form-select obd">
+                                            <option value="Cecyt-1">Cecyt-1</option>
+                                            <option value="Cecyt-2">Cecyt-2</option>
+                                            <option value="Cecyt-4">Cecyt-4</option>
+                                            <option value="Cecyt-5">Cecyt-5</option>
+                                            <option value="Cecyt-6">Cecyt-6</option>
+                                            <option value="Cecyt-7">Cecyt-7</option>
                                             <option value="Cecyt-8">Cecyt-8</option>
+                                            <option value="Cecyt-9">Cecyt-9</option>
+                                            <option value="Cecyt-10">Cecyt-10</option>
+                                            <option value="Cecyt-11">Cecyt-11</option>
+                                            <option value="Cecyt-12">Cecyt-12</option>
+                                            <option value="Cecyt-13">Cecyt-13</option>
+                                            <option value="Cecyt-14">Cecyt-14</option>
+                                            <option value="Cecyt-15">Cecyt-15</option>
+                                            <option value="Cecyt-16">Cecyt-16</option>
+                                            <option value="Cecyt-17">Cecyt-17</option>
+                                            <option value="Cecyt-18">Cecyt-18</option>
                                         </select>
                                         <label for="escuela"><i class="fa-solid fa-school"></i> Escuela</label>
                                         <div class="invalid-feedback" data-sb-feedback="escuela">La escuela es invalida.</div>
